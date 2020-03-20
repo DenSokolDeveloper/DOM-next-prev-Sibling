@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<style>
+
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    li{
+
+        margin-right: 20px;
+        list-style: none;
+    }
+    .button{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    input[type='button']{
+        width: 200px;
+        height: 100px;
+        color: white;
+        background-color: black;
+        cursor: pointer;
+    }
+
+   input[type='button']:hover{
+       background-color: white;
+       color: black;
+       opacity: 1;
+   }
+</style>
+<ul id="list">
+    <li>One</li>
+    <li>Two</li>
+    <li>Three</li>
+    <li>Four</li>
+    <li>Five</li>
+    <li>Six</li>
+    <li>Seven</li>
+    <li>Eight</li>
+    <li>Nine</li>
+    <li>Ten</li>
+</ul>
+
+<!--<p class="paragraph">text</p>-->
+
+<div class="button">
+<input type="button" onclick="selectFirstChild()" value="Выбрать первый"><br/>
+<input type="button" onclick="selectLastChild()" value="Выбрать последний"><br/>
+<input type="button" onclick="selectNext()" value="Выбрать следующий"><br/>
+<input type="button" onclick="selectPrev()" value="Выбрать предыдущий"><br/>
+<input type="button" onclick="addElement()" value="Добавить элемент"><br/>
+<input type="button" onclick="addFirstElement()" value="Добавить в начало элемент"><br/>
+</div>
+<script src="new.js">
+</script>
+</body>
+</html>
